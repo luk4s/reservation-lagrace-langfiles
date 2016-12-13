@@ -1,0 +1,98 @@
+# encoding: utf-8
+cs:
+  label_lagrace: La Grace
+  sail:
+    info: Detail plavby
+    show: Plavba
+    new: Nová plavba
+    edit: Úprava plavby
+    ship: Loď
+    active: Aktivní
+    archived: Archivována
+    full: Plně obsazeno
+    reserve: Rezervováno
+    add_passengers: Přidat pasažéry
+    change_status:
+      archive: Archivovat
+      full: Obsadit
+      reserve: Uzamknout
+      unreserve: Zruš rezervaci
+      active: Aktivovat
+    change_status_title:
+          archive: Skrýt plavbu v systému.
+          full: Obsadit
+          reserve: Přepnout stav plavby na 'rezervováno' a zabránit tak novým rezervacím.
+          active: Umožnit vytvářet nové rezervace.
+    true_pepa: Uvolni Pepovu kajutu
+    false_pepa: Rezervuj Pepovu kajutu
+    change_accommodation: Změnit ubytování
+  button_edit_customer: Upravit zákazníka
+  button_merge_to_this_customer: Sloučit sem
+  button_merge_to: Sloučit
+  button_show_passengers_addresses: E-maily
+  button_add_passenger: Přidat pasažéra
+
+  button_is_not_dup: Není duplicita
+
+  label_customer_new: Nový zákazník
+  label_sail_new: Nová plavba
+  label_crew_new: Nový člen posádky
+  label_travel_agency_new: Nový prodejce
+
+  text_no_passengers: Žádní pasažéři
+  hint_modal_passenger_addresses: Pole zobrazuje unikátní adresy právě vybraných a všech zobrazených pasažérů.  CTRL+A -> CTRL+C
+
+  text_possible_duplicity: Pravděpodobně duplicita
+
+  placeholder_customer_note: Poznámka k zákazníkovi
+  title_modal_passenger_addresses: Adresy pasažérů
+  title_new_passenger: Nový pasažér
+
+  title_update_reservation_terms_for: Uprav podmínky pro %{lang}
+
+  crew_ranks:
+    captain: Kapitán
+    bocman: Bocman
+    engineer: Strojník
+    cook: Kuchař
+    lifeguard: Plavčík
+
+  crew_member:
+    assigned: Přiřazen
+
+  text_warning_customers_already_exists: Zákazník pravděpodobně již existuje
+
+  unit_czk: Kč
+  unit_eur: €
+
+  check_in:
+    title: Přihláška
+    accommodation: ubytování na lodi
+    sail_label: Plavba
+    sail_code: Kód plavby
+    route_from: Odkud
+    route_to: Kam
+    accommodation_length: Délka ubytování
+    x_days: "%{count} dní"
+    date_from: Od
+    date_to: Do
+    plan: Druh
+    crewlist_number: Člen.číslo
+    price_total: Cena celkem
+    deposit: Záloha
+    additional: Doplatek
+    deposit_spent_on: Splatná
+    deposti_until: Splatná do
+    price_include: Cena zahrnuje
+    price_include_text: Ubytování na lodi La Grace v termínu %{date}
+    price_not_include: Cena nezahrnuje
+    price_not_include_text: ! Dopravu do místa nalodění a zpět. Stravu a útratu během plavby. Podíl na spotřebované naftě a přístavních poplatcích. Pojištění na úhradu léčebných výloh v zahraničí. Výdaje za případná víza, návštěvy místních památek apod.
+    payment_on_ship: Platba na lodi
+    payment_on_ship_text: ! Lodní pokladna , potraviny
+    contact: Vedoucí skupiny
+    contact_address: Kontaktní adresa
+    author: Vystavil
+    created_at: Datum
+
+  preferences:
+      notify_new_reservation: Vytvoření nové rezervace

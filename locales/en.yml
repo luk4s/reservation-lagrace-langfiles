@@ -1,0 +1,170 @@
+en:
+  geoname_code: gb
+  meta_title: Reservations La Grace
+  meta_description: Sails list and reservations for La Grace
+  activerecord:
+    models:
+     sail: Sails
+     customer: Customers
+     accommodation: Accommodations
+     passenger: Passengers
+     travel_agency: Travel agency
+     crew: Crews
+     sail_crew_member: Crew members
+    attributes:
+      sail:
+        code: Code
+        date_from: Departure
+        date_to: Arrival
+        route: Route
+        start: Shipping
+        destination: Landing
+        plan: Route plan
+        price_cadet: Price cadet
+        price_cabin: Price cabin
+        price_ship: Price ship
+        availability: availability
+      customer: &customer
+        name: Name
+        first_name: First name
+        last_name: Last name
+        birth: Birth date
+        birthplace: Birth place
+        nation: Nation
+        passport: Number of travel document
+        phone: Phone
+        mail: E-mail
+        note: Note
+        address: Address
+        address_street: Street and number
+        address_city: City
+        address_country: Country
+        sails: Sails
+      passenger:
+        <<: *customer
+        contact: Leader of group
+        price: Price
+        paid: Paid
+        user_id: Edited by
+        note: Note
+        sail: Sail
+        sail_id: Sail
+        accommodation: Accommodation
+        customer: Customre
+        currency: Currency
+        terms: Agree with reservation terms
+      travel_agency:
+        code: Code
+        name: Name
+        street: Street
+        city: City
+        state: Country
+        phone: Phone
+        mail: E-mail
+        adress: Address
+      message:
+        title: Title
+        content: Content
+        ip_adress: IP address
+        created_at: Created
+      crew:
+        <<: *customer
+        nickname: Přezdívka
+        note: Poznámka
+        default_rank: Výchozí hodnost
+      sail_crew_member:
+        rank: Hodnost
+        crew_id: Člen
+
+  cabin1: Cabin 1
+  cabin2: Cabin 2
+  cabin3: Cabin 3
+  cabin4: Cabin 4
+  cabin5: Cabin 5
+  cabin6: Cabin 6
+  cabin7: Cabin 7
+  cadet:  Cadet
+
+  sail:
+    statuses:
+      active: Active
+      archived: Archived
+      full: Full
+      reserved: Reserved
+
+  menu_web_lagrace: Web
+  menu_contact: Contact
+
+  currencies:
+    czk: Kč
+    eur: EUR
+
+  button_reserve: Reserve
+  button_sail_detail: Detail
+  button_sail_list: Back to list
+  label_address: Permanent address
+  title_language_changer: Choose language
+  title_sail_detail: Show detail of sail %{code}
+  title_reserve: Reserve sail %{code}
+  title_group_leader_badge: This is group leader - Contact person who represents the entire group.
+
+  price: Price
+  available_accommodations: Available places
+  available_cadets: Available beds
+  available_cabins: Available cabins
+
+  date:
+    formats:
+      reservation_short: '%m-%d'
+
+  reservation_detail:
+    cadet: Cadet
+    cabin: Cabin
+    ship: Ship
+    title: Sail
+    passenger_classes: Passenger classes
+    passenger_class_cadet: Cadets
+    passenger_class_cabin: Passengers
+    cabin_info1_html: ! Passengers have their double-cabin and have no obligation, just like in a normal hotel. The price is for two beds cabin (one for it is half).
+    cadet_info1_html: ! The second group are called cadets. They are accommodated in two joint cabins fore and must (like any other charter boat), involved in the operation of the ship. They will be divided into patrols must steer, pull the rope, but also help in the kitchen. To book a cadet must be entered in Box Holiday "bunk".
+    info2_html: ! The price is necessary, as with other charter boats, added transportation costs to ship, the contribution of food and shipping box office (ports, oil). If you have special requirements, the amount of the food and cash to ship up to 120 €.
+  reservation_form:
+    new: New reservation
+    new_step1: Group leader
+    new_step2: Other group members
+    title: Reservation confirm
+    title_edit: Edit customer- %{accommodation}
+    confirm_dialog1_html: ! Reservation valid, customer added.
+    button_continue: Add other group member
+    button_confirm: Confirm reservation
+    button_complete: Complete
+    passenger_attributes: Reservation confirmation
+    error_finish_reservation: ERROR - reservation is not possible to complete
+    title_complete_dialog_choose_contact: Confirmation group leader
+    text_complete_dialog_choose_contact_html: ! Confirm group leader for reserved group
+    footer_complete_dialog_choose_contact_html: With selected contact we communicate
+    text_warning_double_complete_error: Reservation already submitted
+    text_successfully_complete: Reservation complete
+    hint:
+      mail:
+        title: E-mail address
+        content: Reservation confirmation will send to this address
+      passport:
+        title: Passport
+        content: !
+          Passport is required for confirmation reservation and identification by cost guards.
+          Passports will be levied upon embarkation for verification and will store for the duration of the voyage in the ship's safe.
+      first_name:
+        title: Givenname
+        content: Givenname based passport.
+      last_name:
+        title: Surname
+        content: Surname based passport
+      birthplace:
+        title: Birthplace
+        content: This information is required by cost guards
+      telephone:
+        title: Contact phone
+        content: Your phone number.
+
+

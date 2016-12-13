@@ -1,0 +1,39 @@
+en:
+  label_lagrace: La Grace
+  crew_ranks:
+    captain: Captain
+    bocman: Bocman
+    engineer: Engineer
+    cook: Cookman
+    lifeguard: Seama
+
+
+  check_in:
+    title: Registration
+    accommodation: accommodation on ship
+    sail_label: Sail
+    sail_code: Sail code
+    route_from: Shipping
+    route_to: Destination
+    accommodation_length: Accommodation length
+    x_days: "%{count} days"
+    date_from: From
+    date_to: To
+    plan: Type
+    crewlist_number: no.
+    price_total: Total price
+    deposit: Deposit
+    additional: Additional
+    deposit_spent_on: Spent on
+    deposti_until: Spent until
+    price_include: Price include
+    price_include_text: Accommodation on ship La Grace at %{date}
+    price_not_include: Price not include
+    price_not_include_text: ! Transpartation to shipping and back. Food or any additional spendings during the cruise, used fuel and port charges.
+      Medical expenses insurance, expenses for visa, local signs, etc.
+    payment_on_ship: Payment on ship
+    payment_on_ship_text: ! Sail budget , food
+    contact: Leader of group
+    contact_address: Contact address
+    author: Author
+    created_at: Date

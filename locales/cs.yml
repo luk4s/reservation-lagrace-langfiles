@@ -1,0 +1,175 @@
+cs:
+  geoname_code: cz
+  meta_title: Rezervační systém La Grace
+  meta_description: Rezervační systém La Grace obsahuje seznam plaveb
+  activerecord:
+    models:
+     sail: Plavby
+     customer: Zákazníci
+     accommodation: Ubytování
+     passenger: Pasažér
+     travel_agency: Prodejci
+     crew: Posádka
+     sail_crew_member: Členové posádky
+     message: Chatboard
+    attributes:
+      sail:
+        code: Kód plavby
+        date_from: Odjezd
+        date_to: Příjezd
+        route: Trasa
+        start: Nalodění
+        destination: Vylodění
+        plan: Plán cesty
+        description: Popis
+        price_cadet: Cena kadet
+        price_cabin: Cena kajuta
+        price_ship: Cena lodi
+        availability: K dispozici
+        use_custom_map: Použít vlastní mapu
+      customer: &customer
+        name: Jméno
+        first_name: Jméno
+        last_name: Příjmení
+        birth: Datum narození
+        birthplace: Místo narození
+        nation: Státní občanství
+        passport: Číslo cestovního dokladu
+        phone: Telefon
+        mail: E-mail
+        extra_bed: Přistýlka
+        nickname: Přezdívka
+        note: Poznámka
+        address: Adresa
+        address_street: Ulice a č.p.
+        address_city: Město
+        address_country: Země
+        sails: Plavby
+      passenger:
+        <<: *customer
+        extra_bed: Přistýlka
+        contact: Vedoucí skupiny
+        price: Cena
+        paid: Zaplatil
+        user_id: Upravil
+        note: Poznámka
+        sail: Plavba
+        sail_id: Plavba
+        accommodation: Ubytování
+        customer: Zákazník
+        currency: Měna
+        terms: Souhlasím s rezervačními podmínkami
+      travel_agency:
+        code: Kód
+        name: Název
+        street: Ulice
+        city: Město
+        state: Stát
+        phone: Telefon
+        mail: E-mail
+        adress: Adresa
+      message:
+        title: Předmět
+        content: Zpráva
+        ip_adress: IP adresa
+        created_at: Vytvořeno
+      crew:
+        <<: *customer
+        extra_bed: Přistýlka
+        nickname: Přezdívka
+        note: Poznámka
+        default_rank: Výchozí hodnost
+      sail_crew_member:
+        rank: Hodnost
+        crew_id: Člen
+
+  cabin1: Kajuta 1
+  cabin2: Kajuta 2
+  cabin3: Kajuta 3
+  cabin4: Kajuta 4
+  cabin5: Kajuta 5
+  cabin6: Kajuta 6
+  cabin7: Kajuta 7
+  cadet:  Kadet
+
+  sail:
+    statuses:
+      active: Aktivní
+      archived: Archivováno
+      full: Obsazeno
+      reserved: Rezervováno
+
+  menu_web_lagrace: Web
+  menu_contact: Kontakt
+
+  currencies:
+    czk: Kč
+    eur: EUR
+
+  button_reserve: Rezervuj
+  button_sail_detail: Detail
+  button_sail_list: Zpět na výpis
+  label_address: Adresa trvalého bydliště
+  title_language_changer: Výběr jazyka
+  title_sail_detail: Zobrazit prodrobnosti plavby %{code}
+  title_reserve: Rezervovat plavbu %{code}
+  title_group_leader_badge: Toto je vedoucí skupiny - Kontaktní osoba která zastupuje celou skupinu.
+
+  price: Cena
+  available_accommodations: Volná místa
+  available_cadets: Volná místa
+  available_cabins: Volné kajuty
+
+  date:
+    formats:
+      reservation_short: '%d. %m.'
+
+  reservation_detail:
+    cadet: Kadet
+    cabin: Kajuta
+    ship: Celá loď
+    title: Plavba
+    passenger_classes: Třídy pasažérů
+    passenger_class_cadet: Kadet
+    passenger_class_cabin: Cestující
+    cabin_info1_html: ! Cestující mají svou dvoulůžkovou kajutu a nemají žádné povinnosti, podobně jako v normálním hotelu. Uvedená cena je za dvoulůžkovou kajutu (pro jednoho je tedy poloviční).
+    cadet_info1_html: ! Druhou skupinou jsou tzv. kadeti. Ti jsou ubytováni ve dvou společných kajutách na přídi a musí se (podobně jako na jiné charterové lodi), podílet na provozu lodi. Budou rozděleni do hlídek, musí kormidlovat, tahat za lana, ale i pomoci v kuchyni.
+    info2_html: ! K ceně je nutné, stejně jako u jiných charterových lodí, připočítat náklady na dopravu na loď, příspěvek na jídlo a do lodní pokladny (přístavy, nafta). Pokud nebudete mít zvláštní požadavky, činí příspěvek na jídlo a do lodní pokladny max. 120 €.
+  reservation_form:
+    new: Nová rezervace
+    new_step1: Vedoucí skupiny
+    new_step2: Další pasažér
+    title: Potvrzení rezervace
+    title_edit: Upravit zákazníka - %{accommodation}
+    confirm_dialog1_html: ! "Přidání v pořádku, děkujeme"
+    button_continue: Přidat dalšího pasažéra
+    button_confirm: Dokončit rezervaci
+    button_complete: Dokončit
+    passenger_attributes: Potvrzení rezervace
+    error_finish_reservation: Reservaci nelze dokončit.
+    title_complete_dialog_choose_contact: Potvrzení kontaktní osoby
+    text_complete_dialog_choose_contact_html: ! Prosím potvrďte kontaktní osobu za rezervovanou skupinu.
+    footer_complete_dialog_choose_contact_html: S vybraným kontaktem budeme komunikovat
+    text_warning_double_complete_error: Rezervace již byla vytvořena
+    text_successfully_complete: Rezervace dokončena
+    hint:
+      mail:
+        title: E-mailová adresa
+        content: Na zadaný e-email Vám bude zasláno potvrzení o rezervaci.
+      passport:
+        title: Cestovní doklad (pas nebo OP)
+        content: !
+          Cestovní doklad jako pas a nebo opčasnký průkaz je vyžadován pro ověření údajů a pobřežní stráží.
+          Doklady se budou vybírat při nalodění pro ověření a budou uschovány po dobu plavby v lodním trezoru.
+      first_name:
+        title: Křestní jméno
+        content: Křestní jméno dle cestovního dokladu. Je důležité uvádět skutečné údaje
+      last_name:
+        title: Příjmení rezervujícho
+        content: Uveďte vaše příjmení. Je důležité uvádět skutečné údaje
+      birthplace:
+        title: Místo narození
+        content: Tuto informaci vyžaduje pobřežní stráž
+      telephone:
+        title: Kontaktní telefon
+        content: Uveďte váš kontaktní telefon. Údaje jsou předávány kapitánovi na lodi a pobřežní stráži pokud je potřeba.
